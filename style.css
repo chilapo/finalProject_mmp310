@@ -11,7 +11,7 @@ input, [text]{
 	clear: both;
 	display: none;
 	padding: 100px;
-	float: center;
+	float: right;
 }
 .submit{
 	clear: both;
