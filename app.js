@@ -7,7 +7,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 const videoIds = {
   Good: {
     1980: {
-      Spring: "DODLEX4zzLQ",//"rY0WxgSXdEE", 
+      Spring: "",//"rY0WxgSXdEE", 
       Winter: "iyLdoQGBchQ", 
       Summer: "crbFmpezO4A", 
       Fall: "tLTGs4fqxBk", 
@@ -206,9 +206,7 @@ const videoIds = {
   }
 }};
 
-const mood = document.getElementById("mood").value;
-const year = document.getElementById('year').value;
-const station = document.getElementById('station').value;
+
 const youtube = document.getElementById("submit");
 
        var player;
@@ -227,8 +225,13 @@ const youtube = document.getElementById("submit");
       function onPlayerReady(event) {
         document.getElementById('submit').addEventListener('click', function() {
         
+        const mood = document.getElementById("mood").value;
+        const year = document.getElementById('year').value;
+        const station = document.getElementById('station').value;
+        
         player.loadVideoById({
                     videoId:  videoIds[mood][year][station],
+                    key:"WEHFHVWIEHF",
                     startSeconds:1,
                     suggestedQuality:'large'
                     });
